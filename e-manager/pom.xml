@@ -39,6 +39,5 @@
 		<module>e-manager-pojo</module>
 		<module>e-manager-interface</module>
 		<module>e-manager-service</module>
-		<module>e-manager-web</module>
 	</modules>
 </project>
