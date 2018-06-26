@@ -19,15 +19,17 @@
   
   <!-- 配置tomcat插件 -->
 	<build>
+	<defaultGoal>compile</defaultGoal>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<configuration>
-					<port>8080</port>
+					<port>8082</port>
 					<path>/</path>
-					<url>http://161.117.4.2:8080/manager/text</url>
-					<username>tomcat</username>
+					<url>http://161.117.4.2:8082/manager/text</url>
+					<update>true</update>
+					<username>tomcat7_8082</username>
 					<password>xingui66</password>
 				</configuration>
 			</plugin>

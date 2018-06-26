@@ -92,8 +92,8 @@
 					<port>8081</port>
 					<path>/</path>
 					<url>http://161.117.4.2:8081/manager/text</url>
-					<server>tomcat7</server>
-					<username>tomcat</username>
+					<update>true</update>
+					<username>tomcat7_8081</username>
 					<password>xingui66</password>
 				</configuration>
 			</plugin>
