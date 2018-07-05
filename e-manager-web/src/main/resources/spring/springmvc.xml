@@ -18,8 +18,11 @@
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+	<!-- 配置资源映射 -->
+	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
+	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="e-manager-web"/>
-	<dubbo:registry protocol="zookeeper" address="161.117.4.2:2181"/>	
-	<dubbo:reference interface="com.keer.service.ItemService" id="itemService" timeout="600000" />
+	<dubbo:registry protocol="zookeeper" address="161.117.4.2:2181" check="false" />	
+	<dubbo:reference check="false"  interface="com.keer.service.ItemService" id="itemService" timeout="600000" />
 </beans>
